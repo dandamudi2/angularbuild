@@ -1,3 +1,3 @@
-FROM tomcat:8.0
+FROM nginx:1.17.1-alpine
 
-COPY /dist/angularbuild  /usr/opt/tomcat/webapps
+COPY /dist/angularbuild /usr/share/nginx/html
